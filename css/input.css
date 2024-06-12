@@ -16,7 +16,7 @@ main {
 }
 header {
     background-color: theme(colors.green);
-    background-image: url('/images/taps.png');
+    background-image: url('../images/taps.png');
     background-position: center;
     background-size: cover;
 }

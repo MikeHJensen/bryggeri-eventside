@@ -665,7 +665,7 @@ main {
 
 header {
   background-color: #0f6046;
-  background-image: url('/images/taps.png');
+  background-image: url('../images/taps.png');
   background-position: center;
   background-size: cover;
 }
