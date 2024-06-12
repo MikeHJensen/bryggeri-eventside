@@ -554,8 +554,51 @@ video {
   --tw-contain-style:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .relative {
   position: relative;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .block {
@@ -570,12 +613,25 @@ video {
   width: 8rem;
 }
 
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.columns-1 {
+  -moz-columns: 1;
+       columns: 1;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
 
 .justify-center {
   justify-content: center;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-3xl {
@@ -587,18 +643,31 @@ video {
   font-weight: 700;
 }
 
-.underline {
-  text-decoration-line: underline;
+html {
+  position: relative;
+  min-height: 100%;
 }
 
-.logo {
-  margin:8px;
-  left: 50%;
-  transform: translateX(-50%);
+main {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  margin-bottom: 40px;
+}
+
+header {
+  background-color: #0f6046;
+  background-image: url('/images/taps.png');
+  background-position: center;
+  background-size: cover;
 }
 
 nav {
-  background-color: #50b697;
+  border-top: 0.3rem solid white;
+  position: relative;
+  z-index: 1;
+  background-color: #0f6046;
+  overflow: hidden;
 }
 
 nav a {
@@ -606,11 +675,59 @@ nav a {
   margin: 4px 2px;
   padding: 4px 8px;
   border-radius: 4px;
+  color: white;
+  font-family: Kelly Slab, serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 nav a:hover, nav a:active {
-  background-color: #132b1d;
-  color: #50b697;
+  color: #ebc83b;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: block;
+  width: 100%;
+}
+
+.aactive {
+  color: #ebc83b;
+}
+
+.logo {
+  padding: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.bg-circle {
+  height: 14.2rem;
+  width: 18rem;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .bg-circle {
+    height: 17.7rem;
+    width: 22rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bg-circle {
+    height: 21.3rem;
+    width: 27rem;
+  }
 }
 
 @media (min-width: 768px) {

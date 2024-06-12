@@ -3,11 +3,15 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     colors: {
-      'green': '#397c67',
+      'green': '#0f6046',
       'lightgreen': '#50b697',
-      'navhover': '#132b1d',
+      'navhover': '#ebc83b',
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        kellyslab: ['Kelly Slab', 'serif'],
+      }
+    },
   },
   plugins: [],
 }

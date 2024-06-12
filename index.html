@@ -1,9 +1,15 @@
 <!doctype html>
 <html>
 <head>
+  <!-- no-cache -->
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-<meta http-equiv="Pragma" content="no-cache" />
-<meta http-equiv="Expires" content="0" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <!-- kelly-font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./css/output.css" rel="stylesheet">
@@ -11,13 +17,14 @@
 <body>
   <header>
     <img src="./images/logo.webp" class="lg:w-48 md:w-40 w-32 block relative logo" alt="logo">
+    <span class="bg-circle"></span>
     <nav>
       <ul class="flex justify-center flex-wrap">
         <li>
           <a href="#">Hjem</a>
         </li>
         <li>
-          <a href="#">Events</a>
+          <a href="#" class="aactive">Events</a>
         </li>
         <li>
           <a href="#">Traktørstedet</a>
@@ -35,13 +42,21 @@
     </ul>
   </nav>
 </header>
-<main>
-  <h1 class="text-3xl font-bold underline">
-    Bryggeri eventside
-  </h1>
+<main class="container columns-1">
+  <div class="max-w-4xl mx-auto">
+  <span>>Events>Birte Kjær event</span>
+  <h1 class="text-3xl font-bold">Events på Bryggeriet</h1>
+  <div>
+    3 billeder
+  </div>
+  <h2>Nyt event</h2>
+  <p style="height: 1000px;">
+    ...
+  </p>
+</div>
 </main>
 <footer>
-  <p>
+  <p class="text-center m-2">
     © 2021 Bryggeri eventside
   </p>
 </footer>

@@ -2,21 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
-.logo {
-    margin:8px;
-    left: 50%;
-    transform: translateX(-50%);
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    margin-bottom: 40px;
+}
+header {
+    background-color: theme(colors.green);
+    background-image: url('/images/taps.png');
+    background-position: center;
+    background-size: cover;
 }
 nav {
-    background-color: theme(colors.lightgreen);
+    border-top: 0.3rem solid white;
+    position: relative;
+    z-index: 1;
+    background-color: theme(colors.green);
+    overflow: hidden;
 }
 nav a {
     display: inline-block;
     margin: 4px 2px;
     padding: 4px 8px;
     border-radius: 4px;
+    color: white;
+    font-family: theme(fontFamily.kellyslab);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 nav a:hover, nav a:active {
-    background-color: theme(colors.navhover);
-    color: theme(colors.lightgreen);
+    color: theme(colors.navhover);
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    width: 100%;
+}
+.aactive {
+    color: theme(colors.navhover);
+}
+
+.logo {
+    padding: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.bg-circle {
+    height: 14.2rem;
+    width: 18rem;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -45%); 
+    z-index: 0;
+}
+@media (min-width: 768px) {
+    .bg-circle {
+        height: 17.7rem;
+        width: 22rem;
+    }
+}
+@media (min-width: 1024px) {
+    .bg-circle {
+        height: 21.3rem;
+        width: 27rem;
+    }
 }
