@@ -554,6 +554,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -565,4 +569,16 @@ video {
 
 .underline {
   text-decoration-line: underline;
+}
+
+@media (min-width: 768px) {
+  .md\:w-32 {
+    width: 8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-48 {
+    width: 12rem;
+  }
 }
