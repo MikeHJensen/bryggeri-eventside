@@ -6,7 +6,6 @@ html {
     position: relative;
     min-height: 100%;
 }
-
 main {
     position: relative;
     z-index: 1;
@@ -49,19 +48,20 @@ article {
 aside p, article p {
     white-space: pre-line;
 }
-#infobox {
+#infobox, #menubox, #orderbox {
     background-color: white;
     border-radius: 8px;
     padding: 8px;
-    margin-bottom: 8px;
-}
-#menubox {
-    background-color: white;
-    border-radius: 8px;
-    padding: 8px;
-    margin: 4px 0;
+    margin-bottom: 10px;
 }
 #orderbtn {
+    background-color: #68a132;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+}
+#orderbtn:hover {
+    background-color: #68a132;
 }
 .aactive {
     color: theme(colors.navhover);
@@ -101,4 +101,30 @@ footer {
     bottom: 0;
     display: block;
     width: 100%;
+}
+.rightpics, .leftpics {
+    display: none;
+}
+@media (min-width: 1200px) {
+    main {
+        display: inline-block;
+        margin-right: 300px;
+    }
+    .rightpics, .leftpics {
+        display: inline-block;
+        position: absolute;
+        width: 300px;
+        top: 283px;
+    }
+    .rightpics {
+        right: 0;
+    }
+    .leftpics {
+        left: 0;
+    }
+}
+.center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
