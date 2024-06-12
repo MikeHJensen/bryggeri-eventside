@@ -3,6 +3,20 @@
 @tailwind utilities;
 
 .logo {
+    margin:8px;
     left: 50%;
     transform: translateX(-50%);
+}
+nav {
+    background-color: theme(colors.lightgreen);
+}
+nav a {
+    display: inline-block;
+    margin: 4px 2px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+nav a:hover, nav a:active {
+    background-color: theme(colors.navhover);
+    color: theme(colors.lightgreen);
 }

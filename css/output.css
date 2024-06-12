@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -562,8 +562,16 @@ video {
   display: block;
 }
 
-.w-16 {
-  width: 4rem;
+.flex {
+  display: flex;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .text-3xl {
@@ -580,13 +588,30 @@ video {
 }
 
 .logo {
+  margin:8px;
   left: 50%;
   transform: translateX(-50%);
 }
 
+nav {
+  background-color: #50b697;
+}
+
+nav a {
+  display: inline-block;
+  margin: 4px 2px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+nav a:hover, nav a:active {
+  background-color: #132b1d;
+  color: #50b697;
+}
+
 @media (min-width: 768px) {
-  .md\:w-32 {
-    width: 8rem;
+  .md\:w-40 {
+    width: 10rem;
   }
 }
 
