@@ -62,7 +62,6 @@ aside p, article p {
     margin: 4px 0;
 }
 #orderbtn {
-    background-color: red;
 }
 .aactive {
     color: theme(colors.navhover);

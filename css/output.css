@@ -562,8 +562,8 @@ video {
   position: sticky;
 }
 
-.top-0 {
-  top: 0px;
+.top-2 {
+  top: 0.5rem;
 }
 
 .m-2 {
@@ -614,6 +614,15 @@ video {
   justify-content: center;
 }
 
+.bg-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 96 70 / var(--tw-bg-opacity));
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -630,6 +639,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -705,7 +719,6 @@ aside p, article p {
 }
 
 #orderbtn {
-  background-color: red;
 }
 
 .aactive {
