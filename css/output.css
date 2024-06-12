@@ -554,42 +554,16 @@ video {
   --tw-contain-style:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .relative {
   position: relative;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .m-2 {
@@ -599,6 +573,16 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .block {
@@ -617,9 +601,9 @@ video {
   max-width: 56rem;
 }
 
-.columns-1 {
-  -moz-columns: 1;
-       columns: 1;
+.columns-3 {
+  -moz-columns: 3;
+       columns: 3;
 }
 
 .flex-wrap {
@@ -630,8 +614,17 @@ video {
   justify-content: center;
 }
 
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -653,6 +646,7 @@ main {
   z-index: 1;
   background-color: white;
   margin-bottom: 40px;
+  padding: 0 8px;
 }
 
 header {
@@ -686,11 +680,32 @@ nav a:hover, nav a:active {
   color: #ebc83b;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  display: block;
-  width: 100%;
+article {
+  background-color: #f4e7c2;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+aside p, article p {
+  white-space: pre-line;
+}
+
+#infobox {
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+#menubox {
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 4px 0;
+}
+
+#orderbtn {
+  background-color: red;
 }
 
 .aactive {
@@ -730,9 +745,28 @@ footer {
   }
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  display: block;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:w-40 {
     width: 10rem;
+  }
+
+  .md\:basis-1\/3 {
+    flex-basis: 33.333333%;
+  }
+
+  .md\:basis-2\/3 {
+    flex-basis: 66.666667%;
   }
 }
 

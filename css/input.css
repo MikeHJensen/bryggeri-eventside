@@ -12,6 +12,7 @@ main {
     z-index: 1;
     background-color: white;
     margin-bottom: 40px;
+    padding: 0 8px;
 }
 header {
     background-color: theme(colors.green);
@@ -40,11 +41,28 @@ nav a {
 nav a:hover, nav a:active {
     color: theme(colors.navhover);
 }
-footer {
-    position: fixed;
-    bottom: 0;
-    display: block;
-    width: 100%;
+article {
+    background-color: #f4e7c2;
+    border-radius: 8px;
+    padding: 8px;
+}
+aside p, article p {
+    white-space: pre-line;
+}
+#infobox {
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+#menubox {
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 4px 0;
+}
+#orderbtn {
+    background-color: red;
 }
 .aactive {
     color: theme(colors.navhover);
@@ -78,4 +96,10 @@ footer {
         height: 21.3rem;
         width: 27rem;
     }
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    width: 100%;
 }
