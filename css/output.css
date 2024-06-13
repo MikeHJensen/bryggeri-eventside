@@ -616,6 +616,10 @@ video {
   justify-content: center;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -701,6 +705,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .text-white {
@@ -794,25 +802,21 @@ b {
 }
 
 #eventscontainer > div {
-  flex-basis: 32%;
+  flex-basis: 30%;
   border: #eee solid 1px;
+  transition: ease 0.15s;
+  background-color: white;
+}
+
+#eventscontainer > div:hover {
+  border: #ebc83b solid 1px;
+  scale: 1.05;
 }
 
 #eventscontainer {
   display: flex;
-  gap: 2%;
+  gap: 4%;
   font-size: 0.9rem;
-}
-
-#orderbtn {
-  background-color: #68a132;
-  border-radius: 8px;
-  color: white;
-  font-weight: 600;
-}
-
-#orderbtn:hover {
-  background-color: #68a132;
 }
 
 .aactive {
@@ -936,6 +940,16 @@ footer {
   text-align: right;
   padding-right: 8px;
   padding-bottom: 15px;
+}
+
+.hover\:bg-green-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-green-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 768px) {

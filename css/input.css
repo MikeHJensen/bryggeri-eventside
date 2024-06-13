@@ -56,27 +56,23 @@ b {
     width:fit-content;
 }
 #eventscontainer > div {
-    flex-basis: 32%;
+    flex-basis: 30%;
     border: #eee solid 1px;
+    transition: ease 0.15s;
+    background-color: white;
+}
+#eventscontainer > div:hover {
+    border: theme(colors.navhover) solid 1px;
+    scale: 1.05;
 }
 #eventscontainer {
     display: flex;
-    gap: 2%;
+    gap: 4%;
     font-size: 0.9rem;
-}
-#orderbtn {
-    background-color: #68a132;
-    border-radius: 8px;
-    color: white;
-    font-weight: 600;
-}
-#orderbtn:hover {
-    background-color: #68a132;
 }
 .aactive {
     color: theme(colors.navhover);
 }
-
 .logo {
     padding: 8px;
     left: 50%;
