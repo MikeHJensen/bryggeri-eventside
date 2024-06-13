@@ -14,7 +14,7 @@ main {
     padding: 0 8px;
 }
 header {
-    background-color: theme(colors.green);
+    background-color: theme(colors.moellegreen);
     background-image: url('../images/taps.png');
     background-position: center;
     background-size: cover;
@@ -23,7 +23,7 @@ nav {
     border-top: 0.3rem solid white;
     position: relative;
     z-index: 1;
-    background-color: theme(colors.green);
+    background-color: theme(colors.moellegreen);
     overflow: hidden;
 }
 nav a {
@@ -48,11 +48,21 @@ article {
 aside p, article p {
     white-space: pre-line;
 }
-#infobox, #menubox, #orderbox {
-    background-color: white;
-    border-radius: 8px;
-    padding: 8px;
-    margin-bottom: 10px;
+b {
+    font-family: theme(fontFamily.kellyslab);
+}
+#maincontainer {
+    display: flex;
+    width:fit-content;
+}
+#eventscontainer > div {
+    flex-basis: 32%;
+    border: #eee solid 1px;
+}
+#eventscontainer {
+    display: flex;
+    gap: 2%;
+    font-size: 0.9rem;
 }
 #orderbtn {
     background-color: #68a132;
@@ -97,7 +107,7 @@ aside p, article p {
     }
 }
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     display: block;
     width: 100%;
@@ -105,22 +115,30 @@ footer {
 .rightpics, .leftpics {
     display: none;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
     main {
         display: inline-block;
-        margin-right: 300px;
     }
     .rightpics, .leftpics {
         display: inline-block;
-        position: absolute;
-        width: 300px;
-        top: 283px;
+        position: relative;
+        width: 30vw;
+        padding-top: 70px;
     }
     .rightpics {
-        right: 0;
+        padding: 0 10px 0 40px
     }
     .leftpics {
-        left: 0;
+        padding: 0 40px 0 10px;
+    }
+}
+@media (min-width: 1700px) {
+    #maincontainer {
+        max-width: 1900px;
+    }
+    .rightpics, .leftpics {
+        padding: 0 40px;
+        padding-top: 70px;
     }
 }
 .center {
@@ -128,3 +146,37 @@ footer {
     left: 50%;
     transform: translateX(-50%);
 }
+
+.box {
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border-width: 1px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  .box-heading {
+    height: 40px;
+  }
+  .box-title {
+    padding: 8px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .box-body {
+    padding: 12px;
+    background-color: white;
+    border-radius: inherit;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  .box-body th {
+    text-align: left;
+    padding-bottom: 15px;
+  }
+  
+  .box-body td {
+    text-align: right;
+    padding-right: 8px;
+    padding-bottom: 15px;
+  }
